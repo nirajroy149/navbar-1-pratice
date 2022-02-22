@@ -4,6 +4,7 @@
     font-family: Montserrat;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
     
 }
 
@@ -18,7 +19,6 @@
 }
 
 nav{
-    
     height: 80px;
     width: 100%;
     background-color: #139487;
@@ -44,7 +44,10 @@ ul li a{
     line-height: 80px;
     color: #fff;
     font-size: 1.2rem;
-    padding:10px 20px;
+    padding:10px;
+    margin-left: 2px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 input[type=checkbox]{
     display: none;
@@ -61,7 +64,13 @@ input[type=checkbox]{
 }
 
 a:hover{
-    background-color: #86C6F4;
+    background-color: rgb(167, 221, 231);
+    color: #096d63;
+}
+a.active{
+    background-color: rgb(167, 221, 231);
+    color: #096d63;
+
 }
 
 @media (max-width: 768px)
@@ -81,16 +90,13 @@ a:hover{
         text-align: center;
         width: 100%;
         background-color: #139487c4;
-        transition: 0.5s ;
-      
+        transition: 0.5s ;  
     }
     
     ul li{
         float: none;
         display: inline-block;
         width: 100%;
-        
-
     }
     ul li a{
         display: inline-block;
@@ -101,10 +107,9 @@ a:hover{
         
     }
     
-    a:hover{
+    a.active,a:hover{
         background-color: #139487;
-        color: rgb(86, 88, 81);
-        
+        color: white;
     }
 
     .bar{
