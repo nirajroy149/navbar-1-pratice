@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.background-image{
+    background: url(images/plant.jpg) center center/cover;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    z-index: -1;
+}
+
+nav{
+    
+    height: 80px;
+    width: 100%;
+    background-color: #139487;
+}
+.logo{
+    line-height: 80px;
+    margin-left: 30px;
+    font-size: 34px;
+    color: #fff;
+}
+
+ul{
+    position: absolute;
+   float: right;
+   top:0;
+   right:10px;
+}
+
+ul li {
+    float: left;
+}
+ul li a{
+    line-height: 80px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding:10px 20px;
+}
+input[type=checkbox]{
+    display: none;
+    position: absolute;
+    
+}
+.bar{
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover{
+    background-color: #86C6F4;
+}
+
+@media (max-width: 768px)
+{
+    .logo{
+        margin-left: 20px;
+        font-size: 1.8rem;
+        line-height: 100px;
+    }
+    nav{
+       height: 100px;
+    }
+    ul{
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        width: 100%;
+        background-color: #139487c4;
+        transition: 0.5s ;
+      
+    }
+    
+    ul li{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        
+
+    }
+    ul li a{
+        display: inline-block;
+        width: 100%;
+        font-size: 1.7rem;
+        padding: 0;
+        line-height: 135px;
+        
+    }
+    
+    a:hover{
+        background-color: #139487;
+        color: rgb(86, 88, 81);
+        
+    }
+
+    .bar{
+        display: block;
+        font-size: 2.5rem;
+        margin-right: 20px;
+    }
+    #check:checked ~ ul{
+        right:0;
+        transition: right 0.5s;
+    }
+    
+   
+}
